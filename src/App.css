@@ -1,38 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #5f4fc8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* home style */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home {
+  width: 100%;
+  height: 100vh;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.home .postId {
+  width: 25rem;
+  height: auto;
+  padding: 1rem;
+  background-color: #5f4fc8;
+  border-radius: 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.home .postId .top,
+.home .postId .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home .postId .top p {
+  text-align: justify;
+  text-indent: 1.5rem;
+}
+
+.home .postId .bottom {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.home .postId .bottom .toggle-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
+}
+
+.home .postId .bottom .toggle-button .likes button,
+.home .postId .bottom .toggle-button .dislikes button {
+  margin-bottom: 0.25rem;
+}
+
+.home .postId .bottom p {
+  font-style: oblique;
+  font-size: smaller;
+}
+
+/* login style */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.login button img {
+  width: 20px;
+  height: auto;
+}
+
+.login button {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.2rem;
+  font-size: 17px;
+}
+
+/* form style */
+.create-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  margin: auto;
+  border-radius: 4px;
+  width: 22rem;
+  height: auto;
+  padding: 1.5rem 3rem;
+  background-color: #5f4fc8;
+}
+
+.create-form .title {
+  width: fit-content;
+  height: 2rem;
+  padding: 0 0.5rem;
+  border-radius: 4px;
+  background-color: #e6e2ff;
+  border: 1px solid #e6e2ff;
+  outline-color: #5f4fc8;
+  font-size: inherit;
+  color: black;
+}
+
+.create-form textarea {
+  width: 13rem;
+  height: auto;
+  background-color: #e6e2ff;
+  border: 1px solid #e6e2ff;
+  padding-left: 0.25rem;
+  padding-top: 0.15rem;
+  font-size: inherit;
+  outline-color: #5f4fc8;
+  border-radius: 4px;
+}
+
+.create-form .submit {
+  width: fit-content;
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 4px;
+  background-color: #e6e2ff;
+  border: 1px solid #e6e2ff;
+  color: #5f4fc8;
+  font-weight: 600;
+}
+.create-form .submit:hover {
+  background-color: #dad6f3;
+  border: 1px solid #dad6f3;
+}
+
+.create-form p {
+  color: red;
 }

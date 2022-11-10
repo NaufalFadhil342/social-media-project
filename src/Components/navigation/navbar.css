@@ -1,0 +1,41 @@
+.navbar {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  border-bottom: 2px solid #5f4fc8;
+  margin-bottom: 1rem;
+}
+
+.navbar nav {
+  flex: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: #5f4fc8;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  font-weight: 600;
+}
+
+.user {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  color: #5f4fc8;
+  font-weight: 600;
+}
+
+.user img {
+  border-radius: 50%;
+}
